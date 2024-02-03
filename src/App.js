@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 // import Home from './Pages/Home'; // Uncomment and correct the path if Home component is used
 import './App.css';
+import Navbar from "./Navbar";
+
 
 function App() {
     const [email, setEmail] = useState('');
@@ -72,6 +74,9 @@ function App() {
                     value="Sign up"
                 />
             </div>
+
+            <Navbar/>
+
         </div>
     );
 }
