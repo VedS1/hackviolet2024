@@ -16,7 +16,7 @@ const UserSchema = new mongoose.Schema({
 });
 
 // eslint-disable-next-line no-undef
-userDb = mongoose.createConnection("mongodb+srv://vedsoolgiri:OrgelzUp7IRaZNWx@cluster0.8nnfpb9.mongodb.net/?retryWrites=true&w=majority");
+userDb = mongoose.createConnection("mongodb+srv://vedsoolgiri:OnlyLetters@cluster0.8nnfpb9.mongodb.net/?retryWrites=true&w=majority");
 
 // eslint-disable-next-line no-undef
 const User = userDb.model("User", UserSchema);
