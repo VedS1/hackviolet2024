@@ -4,6 +4,9 @@ import axios from 'axios';
 // import Home from './Pages/Home'; // Uncomment and correct the path if Home component is used
 import './App.css';
 import Navbar from "./Navbar";
+import MainCoursePage from "./MainCoursePage";
+import CourseBlock from "./CourseBlock";
+import CourseCreator from "./CourseCreator";
 
 
 function App() {
@@ -75,7 +78,10 @@ function App() {
                 />
             </div>
 
-            <Navbar/>
+
+            {/*<MainCoursePage/>*/}
+            <CourseCreator/>
+
 
         </div>
     );
