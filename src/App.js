@@ -11,6 +11,7 @@ import CourseList from "./CourseLIst";
 import OnCourse from "./OnCourse";
 
 
+
 function App() {
 
 
@@ -22,9 +23,10 @@ function App() {
         <div className="mainContainer">
 
 
-            <Navbar/>
-            {/*<MainCoursePage/>*/}
-            <CourseList />
+
+
+            <MainCoursePage/>
+
 
 
         </div>
