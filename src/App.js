@@ -5,6 +5,7 @@ import SignUp from "./pages/SignUp";
 import LoginFailed from "./pages/LoginFailed";
 import Home from "./pages/Home";
 import Course from "./pages/MainCoursePage";
+import courseCreator from "./pages/CourseCreator";
 
 
 function App() {
@@ -12,13 +13,12 @@ function App() {
         <div className = "App">
             <Router>
                 <Routes>
-                    <Route path = "/home" element = {<Home/>}/>
+                    <Route path = "/" element = {<Home/>}/>
                     <Route path = "/login" element = {<Login/>}/>
                     <Route path = "/signup" element = {<SignUp/>}/>
                     <Route path = "/loginfailed" element = {<LoginFailed/>}/>
                     <Route path ="/courses" element = {<Course/>}/>
-
-
+                    <Route path ="/coursecreator" element = {<courseCreator/>}/>
 
                 </Routes>
             </Router>
