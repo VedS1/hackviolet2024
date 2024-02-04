@@ -7,7 +7,7 @@ import AddIcon from '@mui/icons-material/Add';
 import SearchIcon from '@mui/icons-material/Search';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
-import TextField from "@mui/material/TextField";
+import SearchBar from "./SearchBar"
 
 
 
@@ -52,30 +52,33 @@ function Navbar() {
     return (
 
         <AppBar position="static">
-            <Toolbar>
-                <Typography variant="h6" component="div" style={{ marginLeft: "10px" }}>
-                    My Navbar
+            <Toolbar style={{ display: 'flex', justifyContent: 'center' }}>
+                <Typography variant="h6" component="div" style={{ flex: 1 }}>
+                    Bridge
                 </Typography>
-                <IconButton edge="start" color="inherit" aria-label="menu" style={{ marginLeft: "10px" }} onClick={handleHomeIconClick}>
-                    <HomeIcon />
-                </IconButton>
-                <IconButton edge="start" color="inherit" aria-label="menu" style={{ marginLeft: "10px" }} onClick={handleBookmarkIconClick}>
-                    <BookmarkIcon />
-                </IconButton>
-                <IconButton edge="start" color="inherit" aria-label="menu" style={{ marginLeft: "10px" }} onClick={handleScheduleIconClick}>
-                    <ScheduleIcon />
-                </IconButton>
-                <IconButton edge="start" color="inherit" aria-label="menu" style={{ marginLeft: "10px" }} onClick={handleSearchIconClick}>
-                    <SearchIcon />
-                </IconButton>
-                <IconButton edge="start" color="inherit" aria-label="menu" style={{ marginLeft: "10px" }} onClick={handleAddIconClick}>
-                    <AddIcon />
-                </IconButton>
+                <div style={{ display: 'flex', justifyContent: 'space-between', flex: 3 }}>
+
+                    <SearchBar />
+                    <IconButton color="inherit" aria-label="home" onClick={handleHomeIconClick}>
+                        <HomeIcon />
+                    </IconButton>
+                    <IconButton color="inherit" aria-label="bookmark" onClick={handleBookmarkIconClick}>
+                        <BookmarkIcon />
+                    </IconButton>
+                    <IconButton color="inherit" aria-label="schedule" onClick={handleScheduleIconClick}>
+                        <ScheduleIcon />
+                    </IconButton>
+                    <IconButton color="inherit" aria-label="search" onClick={handleSearchIconClick}>
+                        <SearchIcon />
+                    </IconButton>
+                    <IconButton color="inherit" aria-label="add" onClick={handleAddIconClick}>
+                        <AddIcon />
+                    </IconButton>
+                </div>
             </Toolbar>
         </AppBar>
+    );
 
-)
-    ;
 }
 
 export default Navbar;

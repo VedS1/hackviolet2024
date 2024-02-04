@@ -9,6 +9,9 @@ import CourseBlock from "./CourseBlock";
 import CourseCreator from "./CourseCreator";
 import CourseList from "./CourseLIst";
 import OnCourse from "./OnCourse";
+import SearchBar from "./SearchBar";
+import {Create} from "@mui/icons-material";
+
 
 
 
@@ -24,8 +27,14 @@ function App() {
 
 
 
+            <MainCoursePage />
 
+            {/*
             <MainCoursePage/>
+            */}
+
+
+
 
 
 
