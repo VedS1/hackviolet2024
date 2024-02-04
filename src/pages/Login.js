@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 // import Home from './Pages/Home'; // Uncomment and correct the path if Home component is used
 
@@ -7,7 +7,7 @@ function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
-    const navigate = Navigate();
+    const navigate = useNavigate();
 
     const onButtonClick = async (event) => {
         event.preventDefault(); // Prevent default form submission behavior
