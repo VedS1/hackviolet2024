@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { List, ListItem, ListItemText, Paper } from '@mui/material/';
+import {List, ListItem, ListItemText, Typography, Paper} from '@mui/material/';
+import {Grid} from "@mui/material";
+import CourseBlock from "./CourseBlock";
+
 
 function OnCourse() {
     // Initialize state with an array of courses
@@ -16,21 +19,64 @@ function OnCourse() {
     };
 
     const paperStyle = {
-        width: '900px', // Set the desired width
+        width: '450px', // Set the desired width
         height: '50px', // Set the desired height
+        backgroundColor: 'lightgrey'
     };
 
+
+
+
     return (
-        <List>
-            {courses.map((course, index) => (
-                <ListItem key={index}>
-                    <Paper onClick={handlePaperClick} style={paperStyle}>
-                        {course}
+
+        <Grid container spacing={2}> {/* Grid container with spacing */}
+
+            <Grid item xs={12} sm={6} md={1} lg={2}> {/* Grid item for each CourseBlock */}
+                <Typography variant="h5">Quantum Computing</Typography>
+                <Typography variant="h5">Dive deep into the fascinating world of quantum computing!</Typography>
+            </Grid>
+            <List>
+                <ListItem>
+                    <Paper style={paperStyle}>
+                        <Typography variant="h6">Unit 1</Typography>
                     </Paper>
                 </ListItem>
-            ))}
-        </List>
-    )
+                <ListItem>
+                    <Paper style={paperStyle}>
+                        <Typography variant="h6">Unit 2</Typography>
+                    </Paper>
+                </ListItem>
+                <ListItem>
+                    <Paper style={paperStyle}>
+                        <Typography variant="h6">Unit 3</Typography>
+                    </Paper>
+                </ListItem>
+                <ListItem>
+                    <Paper style={paperStyle}>
+                        <Typography variant="h6">Unit 4</Typography>
+                    </Paper>
+                </ListItem>
+                <ListItem>
+                    <Paper style={paperStyle}>
+                        <Typography variant="h6">Unit 5</Typography>
+                    </Paper>
+                </ListItem>
+                <ListItem>
+                    <Paper style={paperStyle}>
+                        <Typography variant="h6">Unit 6</Typography>
+                    </Paper>
+                </ListItem>
+            </List>
+
+
+
+
+
+        </Grid>
+
+    );
+
+
 }
 
 

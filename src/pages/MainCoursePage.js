@@ -32,14 +32,6 @@ Change the
 function MainCoursePage() {
 
 
-    const [courseCategory, setCourseCategory] = useState('');
-
-    const handleCategoryChange = (event) => {
-        setCourseCategory(event.target.value);
-        // VED - display these courses
-    };
-
-
 
     return (
 
@@ -58,8 +50,6 @@ function MainCoursePage() {
                 <Select
                     labelId="course-category-label"
                     id="course-category-select"
-                    value={courseCategory}
-                    onChange={handleCategoryChange}
                 >
                     <MenuItem value="">
                         <em>None</em>

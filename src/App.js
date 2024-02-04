@@ -14,8 +14,11 @@ import OnCourse from "./OnCourse"
 function App() {
     return (
         <div className = "App">
+
+
             <Router>
                 <Routes>
+
                     <Route path = "/" element = {<Home/>}/>
                     <Route path = "/login" element = {<Login/>}/>
                     <Route path = "/signup" element = {<SignUp/>}/>
@@ -26,6 +29,7 @@ function App() {
                     <Route path ="/schedule" element = {<Schedule/>}/>
                     <Route path ="/search" element = {<SearchBar/>}/>
                     <Route path ="/oncourse" element = {<OnCourse/>}/>
+
 
                 </Routes>
             </Router>

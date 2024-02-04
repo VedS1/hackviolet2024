@@ -22,8 +22,8 @@ function CourseList() {
             <Grid item xs={12} sm={6} md={1} lg={2} style={gridItemStyle}> {/* Grid item for each CourseBlock */}
                 <CourseBlock
                     imagePath="./courseImages/courseImage_2.jpg"
-                    title="Quantum Reality Hacking"
-                    description="Dive deep into the fascinating world of quantum mechanics!"
+                    title="Quantum Computing"
+                    description="Dive deep into the fascinating world of quantum computing!"
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={1} lg={2} style={gridItemStyle}> {/* Grid item for each CourseBlock */}
