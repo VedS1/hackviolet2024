@@ -18,6 +18,12 @@ function CourseCreator() {
         setImage(event.target.files[0]);
     }
 
+    const createCourse = () => {
+
+
+
+    }
+
 
     const [nameValue, setNameValue] = useState(''); // State for the name TextField
     const [courseValue, setCourseValue] = useState('');
@@ -109,7 +115,10 @@ function CourseCreator() {
                 </div>
             </Grid>
 
-            <Button variant="contained" color="primary" style={{marginTop: '20px', marginLeft: '40px' }}>
+
+
+
+            <Button variant="contained" color="primary" onClick={createCourse} style={{marginTop: '20px', marginLeft: '40px'}}>
                 Submit
             </Button>
 

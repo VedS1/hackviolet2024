@@ -16,6 +16,9 @@ function Navbar() {
 
         <AppBar position="static">
             <Toolbar>
+                <Typography>
+
+                </Typography>
 
                 <IconButton edge="start" color="inherit" aria-label="menu">
                     <HomeIcon />
