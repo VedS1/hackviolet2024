@@ -1,6 +1,7 @@
 import React, { useRef, useState }  from 'react';
 import { Card, CardMedia, CardContent, Typography, Button, Grid, Paper } from '@mui/material/';
 import TextField from '@mui/material/TextField';
+import axios from 'axios';
 
 
 
@@ -18,7 +19,7 @@ function CourseCreator() {
         setImage(event.target.files[0]);
     }
 
-    const createCourse = () => {
+    const createCourse = async (event) => {
       event.preventDefault(); // Prevent default form submission behavior
       try {
 
