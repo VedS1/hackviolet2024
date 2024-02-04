@@ -2,11 +2,14 @@
 
 import axios from "axios";
 import React, { useState } from "react";
+import { Routes, Route, useNavigate } from 'react-router-dom';
+
 
 function SignUp() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const signUpButtonClick = async (event) => {
         event.preventDefault(); // Prevent default form submission behavior
@@ -15,11 +18,11 @@ function SignUp() {
             const newUser = { username, email, password };
             const response = await axios.post('http://localhost:3001/signup', { user: newUser });
             console.log(response.data);
-
             // Handle signup success here
         } catch (error) {
             console.error(error);
         }
+        navigate('/login');
     };
 
 

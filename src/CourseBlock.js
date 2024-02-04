@@ -1,14 +1,17 @@
 import React, {useState} from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@mui/material/';
 
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
 
 
 function CourseBlock({ imagePath, title, description }) {
 
+    const navigate = useNavigate();
     const handleCardClick = () => {
         // Handle the card click event here
         console.log('Card Clicked');
+        navigate('/oncourse')
     };
 
 

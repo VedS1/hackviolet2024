@@ -33,7 +33,7 @@ function Login() {
 
 
     const signUpButtonClick = () => {
-        navigate('/LoginFailed');
+        navigate('/loginfailed');
     };
 
 

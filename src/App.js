@@ -9,7 +9,7 @@ import CourseCreator from "./pages/CourseCreator";
 import Bookmark from "./pages/BookMark";
 import Schedule from "./pages/Schedule";
 import SearchBar from "./pages/SearchBar";
-
+import OnCourse from "./OnCourse"
 
 function App() {
     return (
@@ -25,7 +25,7 @@ function App() {
                     <Route path ="/bookmark" element = {<Bookmark/>}/>
                     <Route path ="/schedule" element = {<Schedule/>}/>
                     <Route path ="/search" element = {<SearchBar/>}/>
-
+                    <Route path ="/oncourse" element = {<OnCourse/>}/>
 
                 </Routes>
             </Router>

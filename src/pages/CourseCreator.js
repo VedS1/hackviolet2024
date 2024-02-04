@@ -2,7 +2,7 @@ import React, { useRef, useState }  from 'react';
 import { Card, CardMedia, CardContent, Typography, Button, Grid, Paper } from '@mui/material/';
 import TextField from '@mui/material/TextField';
 import axios from 'axios';
-
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
 
 function CourseCreator() {
@@ -12,6 +12,7 @@ function CourseCreator() {
     const handleImageClick = () => {
         inputRef.current.click();
     }
+    const navigate = useNavigate();
 
     const handleImageChange = (event) => {
         const file = event.target.files[0];
@@ -31,6 +32,7 @@ function CourseCreator() {
       } catch (error) {
           console.error(error);
       }
+      navigate('/courses');
     }
 
 
