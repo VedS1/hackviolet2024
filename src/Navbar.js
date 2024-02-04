@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useNavigate } from 'react-router-dom';
 
 import { Toolbar, AppBar, Typography, IconButton } from '@mui/material/';
 
@@ -12,6 +13,7 @@ import TextField from "@mui/material/TextField";
 
 
 function Navbar() {
+    const navigate = useNavigate();
 
 
 
@@ -25,27 +27,28 @@ function Navbar() {
 
 
     const handleHomeIconClick = () => {
-        // Handle HomeIcon click event here
+        navigate('/');
         console.log('Home Icon Clicked');
+
     };
 
     const handleBookmarkIconClick = () => {
-        // Handle BookmarkIcon click event here
+        navigate('/bookmark');
         console.log('Bookmark Icon Clicked');
     };
 
     const handleScheduleIconClick = () => {
-        // Handle ScheduleIcon click event here
+        navigate('/schedule');
         console.log('Schedule Icon Clicked');
     };
 
     const handleSearchIconClick = () => {
-        // Handle SearchIcon click event here
+        navigate('/search');
         console.log('Search Icon Clicked');
     };
 
     const handleAddIconClick = () => {
-        // Handle AddIcon click event here
+        navigate('/coursecreator');
         console.log('Add Icon Clicked');
     };
 

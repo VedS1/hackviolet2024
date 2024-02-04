@@ -27,7 +27,7 @@ function Login() {
                 console.log("WORKED!")
                 //const id = response.data.shift();
                 //indow.localStorage.setItem('token', id._id);
-                navigate('/signup');
+                navigate('/coursecreator');
             }
         });};
 
