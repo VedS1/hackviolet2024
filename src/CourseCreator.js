@@ -19,9 +19,17 @@ function CourseCreator() {
     }
 
     const createCourse = () => {
+      event.preventDefault(); // Prevent default form submission behavior
+      try {
 
+          const newCourse = {name: nameValue, description: descriptionValue };
+          const response = await axios.post('http://localhost:3001/addCourse', { course: newCourse });
+          console.log(response.data);
 
-
+          // Handle signup success here
+      } catch (error) {
+          console.error(error);
+      }
     }
 
 
