@@ -52,6 +52,7 @@ function SignUp() {
                         className="SignUpSubmit"
                         type="submit"
                         value="Submit"
+                        onclick={signUpButtonClick}
                     />
                 </div>
             </form>
@@ -62,5 +63,3 @@ function SignUp() {
 }
 
 export default SignUp;
-
-
