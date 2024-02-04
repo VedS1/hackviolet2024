@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './Login.css';
 // import Home from './Pages/Home'; // Uncomment and correct the path if Home component is used
 
 function Login() {

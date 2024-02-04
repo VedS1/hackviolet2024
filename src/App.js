@@ -4,9 +4,8 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import LoginFailed from "./pages/LoginFailed";
 import Home from "./pages/Home";
-//import Course from "./pages/Course" // Uncomment after Course implementation then add this to routes:
-//
-// <Route path ="/courses" element = {<Course/>}/>
+import Course from "./pages/MainCoursePage";
+
 
 function App() {
     return (
@@ -17,6 +16,7 @@ function App() {
                     <Route path = "/login" element = {<Login/>}/>
                     <Route path = "/signup" element = {<SignUp/>}/>
                     <Route path = "/loginfailed" element = {<LoginFailed/>}/>
+                    <Route path ="/courses" element = {<Course/>}/>
 
 
 

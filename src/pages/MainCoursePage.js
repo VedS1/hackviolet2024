@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 
-import CourseList from "./CourseLIst";
+import CourseList from "../CourseLIst";
 import { Paper } from '@mui/material/';
 import {FormControl, InputLabel, MenuItem, Select} from "@mui/material";
 
