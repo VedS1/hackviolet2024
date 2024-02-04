@@ -6,19 +6,25 @@ import LoginFailed from "./pages/LoginFailed";
 import Home from "./pages/Home";
 import Course from "./pages/MainCoursePage";
 import courseCreator from "./pages/CourseCreator";
+import OnCourse from "./OnCourse";
 
 
 function App() {
     return (
         <div className = "App">
+            <OnCourse />
+
+
             <Router>
                 <Routes>
+
                     <Route path = "/" element = {<Home/>}/>
                     <Route path = "/login" element = {<Login/>}/>
                     <Route path = "/signup" element = {<SignUp/>}/>
                     <Route path = "/loginfailed" element = {<LoginFailed/>}/>
                     <Route path ="/courses" element = {<Course/>}/>
                     <Route path ="/coursecreator" element = {<courseCreator/>}/>
+
 
                 </Routes>
             </Router>
