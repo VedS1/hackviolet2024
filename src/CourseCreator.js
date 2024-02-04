@@ -37,7 +37,7 @@ function CourseCreator() {
     };
 
 
-
+    document.body.style.backgroundColor = '#D6EFDA';
 
 
     return (
@@ -46,12 +46,13 @@ function CourseCreator() {
             <Grid item xs={8}>
                 <Grid container direction="column" spacing={2}>
                     <Grid item>
-                        <Grid item xs={12} sm={6} md={4} style={{ marginTop: '20px', marginLeft: '20px' }}>
+                        <Grid item xs={12} sm={6} md={4} style={{ width: '1200px', marginTop: '80px', marginLeft: '20px' }}>
                             <TextField
                                 label="Enter your name"
                                 variant="outlined"
                                 value={nameValue}
                                 onChange={handleNameChange}
+                                style={{ backgroundColor: 'white' }}
                             />
                         </Grid>
                     </Grid>
@@ -62,30 +63,38 @@ function CourseCreator() {
                                 variant="outlined"
                                 value={courseValue}
                                 onChange={handleCourseChange}
+                                style={{ backgroundColor: 'white' }}
                             />
                         </Grid>
 
                     </Grid>
                     <Grid item>
-                        <Grid item xs={12} sm={6} md={4} style={{ marginTop: '20px', marginLeft: '20px' }}>
+                        <Grid item xs={12} sm={6} md={4} style={{ width: '1200px', marginTop: '20px', marginLeft: '20px' }}>
                             <TextField
                                 label="Description"
                                 multiline
-                                rows={4} // Sets the minimum number of visible rows
+                                rows={7} // Sets the minimum number of visible rows
                                 variant="outlined"
                                 value={descriptionValue}
                                 onChange={handleDescriptionChange}
                                 fullWidth // Optional: Makes the text field take the full width of its container
+                                style={{ backgroundColor: 'white' }}
                             />
                         </Grid>
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item xs={4}>
+
+
+            <Grid item xs={4} style={{marginTop: '20px'}}>
+
+                <p style={{fontSize: '18px', fontWeight: 'bold', marginLeft: '50px'}}>Upload Course Image</p>
+
+
                 <div onClick={handleImageClick}>
 
                     {image ? (
-                        <img src={URL.createObjectURL(image)}  width="300" height="300"/>
+                        <img src={URL.createObjectURL(image)} width="300" height="300"/>
                     ) : (
                         <img src="./photo.png" width="300" height="300"/>
                     )}
@@ -100,7 +109,7 @@ function CourseCreator() {
                 </div>
             </Grid>
 
-            <Button variant="contained" color="primary">
+            <Button variant="contained" color="primary" style={{marginTop: '20px', marginLeft: '40px' }}>
                 Submit
             </Button>
 

@@ -7,6 +7,8 @@ import Navbar from "./Navbar";
 import MainCoursePage from "./MainCoursePage";
 import CourseBlock from "./CourseBlock";
 import CourseCreator from "./CourseCreator";
+import CourseList from "./CourseLIst";
+import OnCourse from "./OnCourse";
 
 
 function App() {
@@ -20,9 +22,9 @@ function App() {
         <div className="mainContainer">
 
 
-
+            <Navbar/>
             {/*<MainCoursePage/>*/}
-            <CourseCreator/>
+            <CourseList />
 
 
         </div>
