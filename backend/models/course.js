@@ -9,10 +9,15 @@ const CourseSchema = new mongoose.Schema({
       type: String,
       required: false,
   },
+  courseDescription: {
+      type: String,
+      required: false
+  },
   courseImage: {
       type: String,
       required: false,
   },
+
 });
 
 // eslint-disable-next-line no-undef
