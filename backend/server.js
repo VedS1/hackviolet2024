@@ -15,13 +15,16 @@ app.use(cors());
 app.post("/login", async (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
-
-    try {
+    console.log(email)
+    console.log(password)
+        try {
         const result = await UserModel.find({ email: email, password: password }).exec();
         if (result && result.length > 0) {
+            console.log("worked" +  result)
             res.send(result);
         } else {
-            res.send("Wrong information");
+            res.send({email: "EXIT_CODE", password: "EXIT_CODE"})
+            console.log("failed resuilt")
         }
     } catch (err) {
         res.status(500).send(err);
