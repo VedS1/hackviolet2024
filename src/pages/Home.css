@@ -1,0 +1,55 @@
+/* Main container styles */
+.mainContainer {
+    display: flex;
+    flex-direction: row; /* Layout for side-by-side */
+    align-items: start; /* Align items to start vertically */
+    justify-content: center;
+    padding: 20px;
+    background-color: #D6EFDA; /* Light green background */
+}
+
+/* Text container styles */
+.textContainer {
+    width: 50%; /* Adjust as needed */
+    margin-right: 20px; /* Spacing between text and image */
+}
+
+/* Button container styles */
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; /* Spacing above the buttons */
+}
+
+/* Button styles */
+.LoginButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.LoginButton:hover {
+    background-color: #0056b3; /* Darken button on hover */
+}
+
+/* Paragraph styles */
+p {
+    color: #2C3E50; /* Dark color for contrast */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Image styles */
+img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self: start; /* Align image to the top */
+}
