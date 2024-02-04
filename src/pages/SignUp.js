@@ -52,7 +52,7 @@ function SignUp() {
                         className="SignUpSubmit"
                         type="submit"
                         value="Submit"
-                        onclick={signUpButtonClick}
+                        onClick={signUpButtonClick}
                     />
                 </div>
             </form>

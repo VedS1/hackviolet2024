@@ -9,12 +9,35 @@ function Login() {
     const [username, setUsername] = useState('');
     const navigate = useNavigate();
 
+
+
     const onButtonClick = async (event) => {
         event.preventDefault(); // Prevent default form submission behavior
         try {
             const response = await axios.post('http://localhost:3001/login', { email, password });
             console.log(response.data);
             // Redirect or handle login success here
+            const loginUser = (event) =>{
+                event.preventDefault();
+                axios.post("http://localhost:3001/login", {
+                    password:password,
+                    email: email,
+                })
+                    .then(response => {
+                        if(response.data.length==0)
+                        {
+
+                            navigate('/loginfailed');
+
+
+                        }
+                        else{
+                            const id = response.data.shift();
+                            window.localStorage.setItem('token', id._id);
+                            navigate('/');
+                        }
+                    });};
+
         } catch (error) {
             console.error(error);
         }
