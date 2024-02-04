@@ -6,8 +6,6 @@ import TextField from '@mui/material/TextField';
 
 function CourseCreator() {
 
-
-
     const inputRef = useRef(null);
     const [ image, setImage ] = useState("")
     const handleImageClick = () => {
@@ -39,10 +37,11 @@ function CourseCreator() {
     };
 
 
+
+
+
     return (
         <Grid container spacing={2}>
-
-
 
             <Grid item xs={8}>
                 <Grid container direction="column" spacing={2}>
@@ -65,6 +64,7 @@ function CourseCreator() {
                                 onChange={handleCourseChange}
                             />
                         </Grid>
+
                     </Grid>
                     <Grid item>
                         <Grid item xs={12} sm={6} md={4} style={{ marginTop: '20px', marginLeft: '20px' }}>
@@ -100,17 +100,12 @@ function CourseCreator() {
                 </div>
             </Grid>
 
-
-
-
-
+            <Button variant="contained" color="primary">
+                Submit
+            </Button>
 
 
         </Grid>
-
-
-
-
 
     );
 }

@@ -38,6 +38,9 @@ app.post ('/signup', async(req, res) =>{
     res.send("registered user");
 })
 
+
+
+
 app.listen(3001, ()=> {
-    //  console.log('Server up and running on 3001');
+    //  console.log('Server up and running on 3001'd);
 });
