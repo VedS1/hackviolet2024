@@ -43,13 +43,6 @@ function Login() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <div className="userContainer">
-                    <input
-                        placeholder="Enter your username here"
-                        className="inputBox"
-                        onChange={(e) => setUsername(e.target.value)}
-                    />
-                </div>
                 <div className="buttonContainer">
                     <input
                         className="loginButton"

@@ -13,7 +13,7 @@ function SignUp() {
         try {
 
             const newUser = { username, email, password };
-            const response = await axios.post('http://localhost:3001/signup', { user: newUser });
+            const response = await axios.post('http:// localhost:3001/signup', { user: newUser });
             console.log(response.data);
 
             // Handle signup success here
@@ -51,6 +51,7 @@ function SignUp() {
                     <input
                         className="SignUpSubmit"
                         type="submit"
+                        onclick={signUpButtonClick}
                         value="Submit"
                         onclick={signUpButtonClick}
                     />
