@@ -14,7 +14,7 @@ function Login() {
     const onButtonClick = async (event) => {
         event.preventDefault(); // Prevent default form submission behavior
         try {
-            const response = await axios.post('http://localhost:3001/login', { email, password });
+            const response = await axios.post('http://localhost:3001/login', { password: password, email: email });
             console.log(response.data);
             // Redirect or handle login success here
             const loginUser = (event) =>{
