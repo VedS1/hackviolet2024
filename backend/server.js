@@ -16,6 +16,7 @@ app.use(cors());
 app.post("/login", async (req, res) =>{  //check if an account exists
     const email = req.body.email;
     const password = req.body.password;
+    console.log(req)
     UserModel.find({email: email, password: password}, (err, result)=>{
         if(err){
             res.send(err);

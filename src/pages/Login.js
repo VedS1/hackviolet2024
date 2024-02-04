@@ -34,7 +34,7 @@ function Login() {
                         else{
                             const id = response.data.shift();
                             window.localStorage.setItem('token', id._id);
-                            navigate('/');
+                            navigate('/signup');
                         }
                     });};
 
