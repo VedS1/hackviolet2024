@@ -5,14 +5,15 @@ import SignUp from "./pages/SignUp";
 import LoginFailed from "./pages/LoginFailed";
 import Home from "./pages/Home";
 import Course from "./pages/MainCoursePage";
-import courseCreator from "./pages/CourseCreator";
-import OnCourse from "./OnCourse";
+import CourseCreator from "./pages/CourseCreator";
+import Bookmark from "./pages/BookMark";
+import Schedule from "./pages/Schedule";
+import SearchBar from "./pages/SearchBar";
 
 
 function App() {
     return (
         <div className = "App">
-            <OnCourse />
 
 
             <Router>
@@ -23,7 +24,11 @@ function App() {
                     <Route path = "/signup" element = {<SignUp/>}/>
                     <Route path = "/loginfailed" element = {<LoginFailed/>}/>
                     <Route path ="/courses" element = {<Course/>}/>
-                    <Route path ="/coursecreator" element = {<courseCreator/>}/>
+                    <Route path ="/coursecreator" element = {<CourseCreator/>}/>
+                    <Route path ="/bookmark" element = {<Bookmark/>}/>
+                    <Route path ="/schedule" element = {<Schedule/>}/>
+                    <Route path ="/search" element = {<SearchBar/>}/>
+
 
 
                 </Routes>
