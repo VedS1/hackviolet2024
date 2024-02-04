@@ -41,6 +41,19 @@ app.post ('/signup', async(req, res) =>{
     res.send("registered user");
 })
 
+app.post ('/addCourse', async(req, res) =>{
+    const user = req.body.user;
+    console.log(user)
+    const user2 = new CourseSchema({name: user.name, description: user.description})
+    console.log(user2)
+    await user2.save();
+    res.send("registered user");
+})
+
+
+
+
+
 app.listen(3001, ()=> {
-    //  console.log('Server up and running on 3001');
+    //  console.log('Server up and running on 3001'd);
 });
